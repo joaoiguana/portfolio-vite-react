@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar/Navbar';
-import FullscreenMenu from './Fullscreen Menu/FullscreenMenu';
+import FullscreenMenu from './FullscreenMenu/FullscreenMenu';
 import './Header.scss';
 
 const Header = () => {

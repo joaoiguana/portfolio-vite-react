@@ -1,10 +1,18 @@
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import HeroSection from './HeroSection/HeroSection.jsx';
+import './Main.scss'
 
 const Main = () => {
-  return (
-    <div>
+  useEffect(() => {
+    AOS.init(); // Initialize AOS on component mount
+  }, []);
 
-    </div>
+  return (
+    <main>
+      <HeroSection />
+    </main>
   )
 }
 
