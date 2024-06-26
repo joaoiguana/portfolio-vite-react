@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
 import HeroSection from './HeroSection/HeroSection.jsx';
-import './Main.scss'
 import ProfileSection from './ProfileSection/ProfileSection.jsx';
+import ProjectSection from './ProjectSection/ProjectSection.jsx';
+import './Main.scss'
 
 const Main = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Main = () => {
     <main>
       <HeroSection />
       <ProfileSection />
+      <ProjectSection />
     </main>
   )
 }
