@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0.5s;
@@ -31,6 +32,72 @@
 
       .close-btn {
         cursor: pointer;
+      }
+    }
+
+    .project-modal {
+
+      .project-description {
+        font-size: 32px;
+      }
+
+      .project-info {
+
+        .info-description {
+          font-family: "Roboto Condensed", sans-serif;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+
+          // Line before the first info-modal
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.5); // Adjust color and transparency as needed
+          }
+
+          // Line after the last info-modal
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.5); // Adjust color and transparency as needed
+          }
+
+          .info-modal {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 28px 0;
+
+            // Line between info-modal divs
+            &:not(:last-child)::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 1px;
+              background: rgba(255, 255, 255, 0.5); // Adjust color and transparency as needed
+            }
+          }
+        }
+      }
+
+      .imgs-container {
+        padding-top: 32px;
+
+        .pc-img {
+          width: 90vw;
+          margin-bottom: 1rem;
+        }
       }
     }
   }

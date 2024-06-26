@@ -8,7 +8,9 @@ import './Main.scss'
 
 const Main = () => {
   useEffect(() => {
-    AOS.init(); // Initialize AOS on component mount
+    AOS.init({
+      once: true,
+    }); // Initialize AOS on component mount
   }, []);
 
   return (

@@ -188,11 +188,13 @@
 
           &:nth-child(3) {
             grid-area: b;
+            margin-left: 3rem;
 
             img {
               // margin-left: rem;
               height: 16em;
               max-width: 100%;
+
             }
           }
 
