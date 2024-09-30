@@ -4,7 +4,7 @@ import 'aos/dist/aos.css'; // Import AOS CSS
 import HeroSection from './HeroSection/HeroSection.jsx';
 import ProfileSection from './ProfileSection/ProfileSection.jsx';
 import ProjectSection from './ProjectSection/ProjectSection.jsx';
-import './Main.scss'
+import './Main.scss';
 
 const Main = () => {
   useEffect(() => {

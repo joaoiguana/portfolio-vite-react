@@ -1,7 +1,7 @@
-import ArrowSvg from '../../../assets/arrow-down-sharp-svgrepo-com.svg'
+import ArrowSvg from '../../../assets/arrow-down-sharp-svgrepo-com.svg';
 
 const HeroSection = () => {
-  console.log('Hero Section')
+  console.log('Hero Section');
 
   return (
     <section className="home">
