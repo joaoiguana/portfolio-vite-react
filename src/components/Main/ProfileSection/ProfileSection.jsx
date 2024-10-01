@@ -14,7 +14,7 @@ const ProfileSection = () => {
             WEB WIZARD WITH A KNACK FOR TURNING COMPLEXITY INTO SIMPLICITY. I THRIVE AT THE CROSSROADS OF INNOVATION AND INTUITIVE DESIGN.
           </p>
           <p /*data-aos="fade-up" data-aos-duration="1000" data-aos-delay={calculateDelay(300, 300, 2)}*/>
-            WHEN I'M NOT CODING UP A STORM, I'M RECORDING MUSIC IN THE STUDIO OR DROOLLING AT CONCERTS.
+            WHEN I'M NOT CODING UP A STORM, I'M RECORDING MUSIC IN THE STUDIO OR READING THE GREATS.
           </p>
         </div>
         <div className="profile-description-header">

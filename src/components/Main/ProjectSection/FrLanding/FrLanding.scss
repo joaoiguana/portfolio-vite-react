@@ -77,6 +77,44 @@
             justify-content: space-between;
             padding: 28px 0;
 
+            .toggle-view-btn {
+              display: flex;
+              align-items: center;
+              background: none;
+              border: none;
+              color: rgba(255, 255, 255, 0.8); // Subtle text color to match theme
+              // font-size: 16px;
+              font-family: "Roboto Condensed", sans-serif;
+              cursor: pointer;
+              padding: 0;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              transition: color 0.3s ease;
+
+              svg {
+                margin-right: 8px;
+                font-size: 20px;  // Adjust icon size to match text
+              }
+
+              &:hover {
+                color: #fff;  // Make it fully white on hover for clear feedback
+              }
+
+              &:focus {
+                outline: none; // Remove default focus styles
+                // color: #00aaff; // Optional: highlight the button with a different color on focus
+              }
+
+              span {
+                // font-weight: bold;
+              }
+            }
+
+            // Additional space for clarity
+            .view-toggle {
+              margin-top: 16px;
+            }
+
             // Line between info-modal divs
             &:not(:last-child)::after {
               content: "";
@@ -93,10 +131,26 @@
 
       .imgs-container {
         padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .pc-img {
           width: 90vw;
           margin-bottom: 1rem;
+        }
+
+        .mobile-img {
+          width: 15vw;  // Adjust accordingly for mobile
+          margin-bottom: 1rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .imgs-container {
+          .mobile-img {
+            width: 40vw;  // Adjust the width for mobile screens
+          }
         }
       }
     }
