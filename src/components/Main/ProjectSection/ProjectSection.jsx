@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import FrLanding from './FrLanding/FrLanding.jsx';
+import ProjectView from './ProjectView/ProjectView';
 
 const projectsData = [
   {
@@ -110,8 +110,8 @@ const ProjectSection = () => {
         ))}
 
         {activeProject && (
-          <FrLanding
-            closeFrLanding={handleCloseProjectDetails}
+          <ProjectView
+            closeProjectView={handleCloseProjectDetails}
             isActive={!!activeProject}
             project={activeProject} // Pass the active project as a prop
           />

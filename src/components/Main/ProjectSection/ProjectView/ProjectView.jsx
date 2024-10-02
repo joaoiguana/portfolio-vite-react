@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { FaLaptopCode, FaMobile } from "react-icons/fa";
-import './FrLanding.scss';
+import './ProjectView.scss';
 
-const FrLanding = ({ closeFrLanding, isActive, project }) => {
+const ProjectView = ({ closeProjectView, isActive, project }) => {
   // Track the selected view (either 'pc' or 'mobile')
   const [selectedView, setSelectedView] = useState('pc');
 
@@ -15,7 +15,7 @@ const FrLanding = ({ closeFrLanding, isActive, project }) => {
         <header>
           <div className="navbar">
             <p className="portfolio-description">{project.name}</p>
-            <p className="close-btn" onClick={closeFrLanding}>Close</p>
+            <p className="close-btn" onClick={closeProjectView}>Close</p>
           </div>
         </header>
         <main>
@@ -72,4 +72,4 @@ const FrLanding = ({ closeFrLanding, isActive, project }) => {
   );
 };
 
-export default FrLanding;
+export default ProjectView;
